@@ -1,1 +1,14 @@
-ID:	Title:	Preconditions:	Steps:	Expected results:	Actual results:	Pass/fail
+ID	1						
+Title:	Use multiselect filter "Price" on "google.com" to search for "prowly"						
+Preconditions:	-						
+Steps:	1. Go to "google.com" 
+	2. In the search bar type ""prowly"" and press Enter 
+	3. Click on the "Pricing" filter
+	4. Click on the "Per month" filter
+	5. Open the first page of Prowly after the sponsored block						
+Expected results:	1-3. Search results should include pages with Prowly's pricing information and links to that page "https://prowly.com/pricing/"
+			4. Search results should include pages with Prowly's monthly pricing information and links to that page "https://prowly.com/pricing/"
+			5. Redirect to "https://prowly.com/pricing/" page						
+Actual results:	When the Pricing filter is used alone, the first result page shows 3 prices. However, when the "Per month" filter is also selected, the first result page only shows the price for the Professional Plus Bundle						
+Status:	Retest						
+Note:	Need to check with a business analyst to see how many prices should be displayed						
