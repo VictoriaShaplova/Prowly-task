@@ -9,7 +9,7 @@ Steps:	1. Go to "google.com"
 Expected results: 1-3. Search results should include pages with Prowly's pricing information and links to that page "https://prowly.com/pricing/"
 		  4. Search results should include pages with Prowly's monthly pricing information and links to that page "https://prowly.com/pricing/"
 		  5. Redirect to "https://prowly.com/pricing/" page						
-Actual results:	When the Pricing filter is used alone, the first result page shows 3 prices. However, when the "Per month" filter is also selected, the first result page only shows the price for the Professional Plus Bundle						
+Actual results:	When the Pricing filter is used alone, the first result shows 3 prices. However, when the "Per month" filter is also selected, the first result only shows the price for the Professional Plus Bundle						
 Status:	Retest						
 Note:	Need to check with a business analyst to see how many prices should be displayed						
 ----
@@ -20,10 +20,22 @@ Steps:	1. Go to "google.com"
 	2. In the search bar type "prowly" and press Enter 
 	3. Click on the "Tools" > "Any time" > "Custom range"
 	4. In the "From" date field enter "21/7/2023" or "2023/7/21"
-	5. In the "To" date field enter "26/8/2023" or  "2023/8/26"
+	5. In the "To" date field enter "26/8/2023" or "2023/8/26"
 	6. Click the "Go" button
 Expected results: 1-6. The dates should be automatically changed to the correct format. The results should show all pages that contain the query "prowly" and were published between "7/21/2023" and "8/26/2023"
 Actual results:	-
 Status:	Not Yet Run
 Note:	It is also possible to implement a redirect to the "no result" page
 ----
+ID:	3
+Title:	Clear  "Login" filter after searching for the word "prowly" on "google.com"
+Preconditions:	-
+Steps:	1. Go to "google.com" 
+	2. In the search bar type "prowly" and press Enter 
+	3. Click on the "Login" filter
+	4. Click on the "Login" filter again
+Expected results: 1-3. The results should show all pages that contain the word "prowly" and "Log in". The word "login" is added to the search query. The first page after the sponsored block should redirect to the "https://app.prowly.com/users/signin" page
+		  4. The results should show all pages that contain the word "prowly". The word "login" is deleted to the search query	
+Actual results:	-
+Status:	Not Yet Run
+Note:	-
